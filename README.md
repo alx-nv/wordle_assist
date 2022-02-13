@@ -21,5 +21,7 @@ How it works:
 
 Known issues:
   * I had some problems getting rid of non-ascii characters, such as single quotation marks and accented letters. Those are currently hard coded in the notebook and only work for the test file I am using. A general solution should be implemented.
+
   ** The non-five-letter-words removal proces seems to be the slowest part of the code as it relies on a for loop going through every item in the list. 
+
   *** The frequency score calculation is very basic and unstable. For example, a fake word such as 'eeeee' will score higher than any other word, assuming E is the most common letter. This is not a problem in the notebook, as I am only checking readily avaiable words, but the approach is prone to fake results. A solution I came up with was to check all words in a list with ome kind of dictionary online, making sure there are no fake words but this is currently not implemented.
