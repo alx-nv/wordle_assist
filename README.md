@@ -20,6 +20,7 @@ How it works:
 
 
 Known issues:
+
   *1 I had some problems getting rid of non-ascii characters, such as single quotation marks and accented letters. Those are currently hard coded in the notebook and only work for the test file I am using. A general solution should be implemented.
 
   *2 The non-five-letter-words removal proces seems to be the slowest part of the code as it relies on a for loop going through every item in the list. 
